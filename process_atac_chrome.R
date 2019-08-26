@@ -171,6 +171,13 @@ names(extract_atac_pro) <- cancer_str
 setwd('C:/Users/wnchang/Documents/F/PhD_Research/2019_08_08_atac')
 save(extract_atac_pro, file='extract_atac_log2norm_promoter.RData')
 
+
+
+for(kk in 1:length(extract_atac_pro))
+{
+	print(dim(extract_atac_pro[[kk]]))
+}
+
 #----------------
 
 
